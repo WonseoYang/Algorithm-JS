@@ -1,6 +1,8 @@
-let N = 11;
+/* jshint esversion: 6*/
+
+// let N = 11;
 // let N = 9;
-// let N = 1041;
+let N = 1041;
 // let N = 15;
 
 
@@ -38,9 +40,9 @@ function solution(N) {
                     break;
                 }
             }
-            answer = Math.max.apply(null, answer);
+            answer = Math.max(...answer);
             return answer;
         }
 }
 
-console.log(solution(N))
+console.log(solution(N));
