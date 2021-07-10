@@ -25,8 +25,8 @@ function solution(N) {
     
     let i = 0;
 
+    //tmp의 배열 안에 1을 가진 수가 두 곳에 위치하지 않으면 출력할 값을 0으로
     if(!(tmp.includes(1, i)&&tmp.includes(1, i+1))){
-        //tmp의 배열 안에 1을 가진 수가 두 곳에 위치하지 않으면 출력할 값을 0으로
         answer.push(0);
         return parseInt(answer.join());
         }else{
