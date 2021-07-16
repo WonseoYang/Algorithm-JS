@@ -1,8 +1,8 @@
 /* jshint esversion: 6 */
 
 // case 1
-let participant = ['leo', 'kiki', 'eden']
-let completion = ['eden', 'kiki']
+let participant = ['leo', 'kiki', 'eden'];
+let completion = ['eden', 'kiki'];
 
 // case 2
 // let participant = ["marina", "josipa", "nikola", "vinko", "filipa"];
@@ -12,16 +12,16 @@ let completion = ['eden', 'kiki']
 // let participant = ["mislav", "stanko", "mislav", "ana"];
 // let completion = ["stanko", "ana", "mislav"];
 
-function solution (participant, completion) {
-  participant.sort()
-  completion.sort()
+function solution(participant, completion) {
+  participant.sort();
+  completion.sort();
 
   for (let i = 0; i < participant.length; i++) {
     if (participant[i] !== completion[i]) {
-      const answer = participant[i]
-      return answer
+      const answer = participant[i];
+      return answer;
     }
   }
 }
 
-console.log(solution(participant, completion))
+console.log(solution(participant, completion));
