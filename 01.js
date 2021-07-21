@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 // let N = 11;
 // let N = 9;
 let N = 1041;
