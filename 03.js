@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 // case 1
 let participant = ['leo', 'kiki', 'eden'];
 let completion = ['eden', 'kiki'];
