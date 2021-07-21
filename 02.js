@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 // case 1
 let n = 5;
 let lost = [2, 4];
