@@ -11,15 +11,20 @@ let completion = ['eden', 'kiki'];
 // let completion = ["stanko", "ana", "mislav"];
 
 function solution(participant, completion) {
-  participant.sort();
-  completion.sort();
-
-  for (let i = 0; i < participant.length; i++) {
-    if (participant[i] !== completion[i]) {
-      const answer = participant[i];
-      return answer;
+  const list = {};
+  for (let starter of participant) {
+    if (!list[starter]) {
+      list[starter] = 1;
+    } else {
+      list[starter] += 1;
     }
   }
+  for (let finisher of completion) {
+    if (list[finisher]) {
+      list[finisher] -= 1;
+    }
+  }
+  return Object.keys(list).find((name) => list[name] > 0);
 }
 
 console.log(solution(participant, completion));
