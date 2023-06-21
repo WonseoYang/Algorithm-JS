@@ -1,12 +1,12 @@
 // case 1
-let n = 5;
-let lost = [2, 4];
-let reserve = [1, 3, 5];
+// let n = 5;
+// let lost = [2, 4];
+// let reserve = [1, 3, 5];
 
 // case 2
-// let n = 5;
-// let lost = [2,4];
-// let reserve = [3];
+let n = 5;
+let lost = [2, 4];
+let reserve = [3];
 
 // case 3
 // let n = 3;
